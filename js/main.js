@@ -15,4 +15,24 @@ document.addEventListener('DOMContentLoaded', function () {
     var href = a.getAttribute('href').split('/').pop();
     if (href === path) a.classList.add('active');
   });
+
+  // Scroll-reveal (progressive enhancement; no-op without IntersectionObserver)
+  if ('IntersectionObserver' in window) {
+    var targets = document.querySelectorAll(
+      '.section-head, .sector-card, .project-card, .step, .entity-card, .contact-card'
+    );
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    targets.forEach(function (t, i) {
+      t.classList.add('reveal');
+      t.style.transitionDelay = (i % 4) * 60 + 'ms';
+      io.observe(t);
+    });
+  }
 });

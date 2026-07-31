@@ -23,7 +23,6 @@ Pure static HTML/CSS/vanilla JS — no build step, no framework. Deployable as-i
 ## Before launch — items to verify with the client
 
 - **Project figures** were compiled from public press releases and bond records (MTSU News, PR Newswire, Kutak Rock, Memphis HEHF board records). Confirm all bed counts, dollar amounts, dates, and entity names with the client before publishing.
-- **"$275M+" / "2,400+ beds" stats** are conservative sums of publicly reported figures (Memphis ~$73M + MTSU $56.5M + Atlanta $146.8M; Florida Tech financing amount not publicly stated in sources used). Update once exact totals are confirmed.
-- **Photography**: project visuals are placeholder SVG illustrations. Replace with real renderings/photos in each `.project-visual` block and on the detail pages when the client provides them.
+- **Photography**: project visuals currently use dusk-scene SVG illustrations (`images/illustrations/`). To swap in real renderings or photos, just add JPEGs to `images/projects/` named after each project — `florida-tech.jpg`, `university-of-memphis.jpg`, `mtsu.jpg`, `morehouse-spelman.jpg`, `workforce-housing.jpg`, `student-housing.jpg`, `hotel.jpg`, `hospital-eaas.jpg`. Every image slot tries the JPEG first and falls back to the illustration automatically, so no code changes are needed. Recommended size: ~1600×1000 (16:10).
 - **Contact info**: currently uses the Berkeley address and `info@madronecdf.org` found in public records. Confirm, and add a phone number and a Madrone Health email if available.
 - **Leadership/team page**: not included yet (no verified public bios). Easy to add as `team.html` when the client supplies names, titles, and photos.
