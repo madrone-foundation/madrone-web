@@ -1,0 +1,10 @@
+The typefaces in this directory are used under the SIL Open Font License 1.1
+(https://openfontlicense.org):
+
+- Archivo — Copyright 2019 The Archivo Project Authors
+  (https://github.com/Omnibus-Type/Archivo)
+- Newsreader — Copyright 2020 The Newsreader Project Authors
+  (https://github.com/productiontype/Newsreader)
+
+The OFL permits use, redistribution, and self-hosting of these fonts,
+including for commercial purposes, provided they are not sold by themselves.

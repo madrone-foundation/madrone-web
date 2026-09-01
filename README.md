@@ -21,7 +21,7 @@ A redesigned website for **Madrone Community Development Foundation** and **Madr
 
 ## Tech
 
-Pure static HTML/CSS/vanilla JS — no build step, no framework. Deployable as-is to GitHub Pages, Netlify, Vercel, or any static host. Google Fonts (Fraunces + Inter) is the only external dependency.
+Pure static HTML/CSS/vanilla JS — no build step, no framework, and zero third-party dependencies (Archivo and Newsreader are self-hosted variable fonts in `fonts/`, SIL OFL licensed). Deployable as-is to GitHub Pages, Netlify, Vercel, or any static host. Optional later optimization: convert the TTFs to woff2 (~3–4× smaller) with `fonttools`.
 
 ## Before launch — items to verify with the client
 
