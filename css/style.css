@@ -413,6 +413,88 @@ section { padding: 110px 0; }
 }
 
 /* --------------------------------------------------------------------------
+   News ledger
+   -------------------------------------------------------------------------- */
+
+.news-list { border-top: 1px solid var(--ink); }
+
+.news-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-date {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper);
+  padding-top: 6px;
+}
+
+.news-item h3 { font-size: 1.45rem; margin-bottom: 10px; }
+.news-item p { font-size: 16.5px; color: var(--stone); line-height: 1.62; max-width: 46em; }
+
+.news-links { margin-top: 14px; display: flex; gap: 24px; flex-wrap: wrap; }
+
+.news-links a {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 680;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--copper);
+  border-bottom: 1px solid var(--copper);
+  padding-bottom: 2px;
+}
+
+.news-tag {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stone);
+  border: 1px solid var(--line);
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   Governance
+   -------------------------------------------------------------------------- */
+
+.doc-list { border-top: 1px solid var(--ink); }
+
+.doc-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  align-items: baseline;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.doc-item h3 { font-size: 1.15rem; }
+.doc-item p { font-size: 15px; color: var(--stone); margin-top: 6px; max-width: 42em; }
+
+.doc-action {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--copper);
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
    Steps (the model)
    -------------------------------------------------------------------------- */
 
