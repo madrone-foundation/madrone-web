@@ -270,6 +270,20 @@ section { padding: 110px 0; }
   gap: 48px;
 }
 
+.card-grid.cols-5 { grid-template-columns: repeat(5, 1fr); gap: 30px; }
+.card-grid.cols-5 .sector-card h3 { font-size: 1.1rem; }
+.card-grid.cols-5 .sector-card p { font-size: 14.5px; }
+
+@media (max-width: 1120px) {
+  .card-grid.cols-5 { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 860px) {
+  .card-grid.cols-5 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .card-grid.cols-5 { grid-template-columns: 1fr; }
+}
+
 .sector-card {
   border-top: 1px solid var(--ink);
   padding-top: 28px;
