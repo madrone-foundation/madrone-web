@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Scroll-reveal (progressive enhancement; no-op without IntersectionObserver)
   if ('IntersectionObserver' in window) {
     var targets = document.querySelectorAll(
-      '.section-head, .sector-card, .project-card, .step, .entity-card, .contact-card'
+      '.section-head, .sector-card, .project-card, .project-row, .dev-item, .step, .entity-card, .contact-card'
     );
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
