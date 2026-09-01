@@ -17,6 +17,7 @@ A redesigned website for **Madrone Community Development Foundation** and **Madr
 | `news.html` | News ledger: closings, groundbreakings, and openings with source links (dates compiled from public coverage — verify before launch) |
 | `governance.html` | Board & governance: board overview (roster to be provided by client), corporate structure with EIN, documents & disclosures incl. EMMA |
 | `contact.html` | Contact information for both foundations |
+| `privacy.html` | Privacy policy — accurate for the current site (no cookies, no analytics, no forms); update it if analytics or forms are ever added |
 
 ## Tech
 
