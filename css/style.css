@@ -386,6 +386,9 @@ section { padding: 110px 0; }
 
 .dev-list { border-top: 1px solid var(--ink); }
 
+a.dev-item { color: inherit; }
+a.dev-item:hover h3 { color: var(--copper); }
+
 .dev-item {
   display: grid;
   grid-template-columns: 2.2fr 3fr 1.3fr;
@@ -652,9 +655,8 @@ section:not(.green-bg) .step p { color: var(--stone); }
 
 .leader-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 64px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 48px;
 }
 
 .leader-card { border-top: 1px solid var(--ink); padding-top: 30px; }
