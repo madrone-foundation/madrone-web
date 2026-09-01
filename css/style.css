@@ -315,6 +315,47 @@ section { padding: 84px 0; }
   gap: 28px;
 }
 
+/* Featured layout: two-wide, editorial-scale imagery */
+.project-grid.featured {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.featured .project-visual { aspect-ratio: 16 / 9; }
+
+.featured .project-body { padding: 30px 34px 34px; }
+.featured .project-body h3 { font-size: 1.65rem; }
+.featured .project-body p { font-size: 16px; }
+.featured .project-loc { font-size: 14px; }
+
+/* Horizontal scroll-snap strip for pipeline cards */
+.project-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(300px, 38vw, 430px);
+  gap: 26px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 6px 6px 24px;
+  margin: 0 -6px;
+  scrollbar-color: var(--green-mid) var(--green-soft);
+}
+
+.project-scroller .project-card { scroll-snap-align: start; }
+
+.project-scroller::-webkit-scrollbar { height: 8px; }
+.project-scroller::-webkit-scrollbar-track { background: var(--green-soft); border-radius: 999px; }
+.project-scroller::-webkit-scrollbar-thumb { background: var(--green-mid); border-radius: 999px; }
+
+.scroller-hint {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+
 .project-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -588,6 +629,7 @@ section { padding: 84px 0; }
 }
 
 .leader-card p { font-size: 15.5px; color: var(--ink-soft); }
+.leader-card p + p { margin-top: 14px; }
 
 /* --------------------------------------------------------------------------
    CTA band
@@ -694,6 +736,9 @@ section { padding: 84px 0; }
   .split, .contact-grid, .detail-layout { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .fact-box { position: static; }
+  .project-grid.featured { grid-template-columns: 1fr; gap: 30px; }
+  .featured .project-body { padding: 24px 26px 28px; }
+  .featured .project-body h3 { font-size: 1.4rem; }
 }
 
 @media (max-width: 760px) {
