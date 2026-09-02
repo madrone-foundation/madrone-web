@@ -8,7 +8,7 @@
 | `about.html` | Mission, the two entities, guiding principles |
 | `what-we-do.html` | Sector capabilities and a step-by-step explanation of the P3 / tax-exempt financing model |
 | `projects.html` | Full portfolio: four closed financings plus the development pipeline |
-| `projects/florida-tech.html` | Florida Institute of Technology — 555 beds, opening Fall 2026 |
+| `projects/florida-tech.html` | Florida Institute of Technology — Crimson Crossing, 553 beds, opened August 2026 |
 | `projects/university-of-memphis.html` | University of Memphis Park Avenue Campus — ~542 beds, ~$73M bonds |
 | `projects/mtsu.html` | Womack Commons at MTSU — 554 beds, $56.5M bonds, opening Fall 2027 |
 | `projects/morehouse-spelman.html` | 850 West End (Morehouse & Spelman) — 793 beds, $147M, occupancy Fall 2028 |
