@@ -1,5 +1,7 @@
 # Madrone — Website
 
+A redesigned website for **Madrone Community Development Foundation** and **Madrone Health Foundation**, two related California nonprofit public benefit corporations recognized as 501(c)(3) organizations. The design is modeled on peer nonprofit developer sites (e.g., Provident Resources Group), emphasizing the project portfolio, the nonprofit ownership/financing model, and sector capabilities.
+
 ## Pages
 
 | Page | Purpose |
@@ -15,8 +17,22 @@
 | `news.html` | News ledger: closings, groundbreakings, and openings with source links (dates compiled from public coverage — verify before launch) |
 | `governance.html` | Board & governance: board overview (roster to be provided by client), corporate structure with EIN, documents & disclosures incl. EMMA |
 | `contact.html` | Contact information for both foundations |
+| `thanks.html` | Contact-form confirmation page (noindex) |
 | `privacy.html` | Privacy policy — accurate for the current site (no cookies, no analytics, no forms); update it if analytics or forms are ever added |
 
 ## Tech
 
 Pure static HTML/CSS/vanilla JS — no build step, no framework, and zero third-party dependencies (Archivo and Newsreader are self-hosted variable fonts in `fonts/`, SIL OFL licensed). Deployable as-is to GitHub Pages, Netlify, Vercel, or any static host. Optional later optimization: convert the TTFs to woff2 (~3–4× smaller) with `fonttools`.
+
+## Before launch — items to verify with the client
+
+- **Project figures** were compiled from public press releases and bond records (MTSU News, PR Newswire, Kutak Rock, Memphis HEHF board records). Confirm all bed counts, dollar amounts, dates, and entity names with the client before publishing.
+- **Photography**: the four flagship projects now use actual renderings (in `images/projects/`), sourced from the projects' public announcements — Crimson Crossing (Servitas/CBG), U of M Park Avenue and MTSU Womack Commons (The Annex Group), and 850 West End (Radnor/Moody Nolan). Madrone should confirm usage rights with each developer before launch. The MTSU image is cropped from a co-branded announcement graphic — request the clean original from The Annex Group. Pipeline sectors still use the blueprint-style illustrations in `images/illustrations/`; replace any image by overwriting the same filename.
+- **Contact info**: currently uses the Berkeley address and `info@madrone.org` found in public records. Confirm, and add a phone number and a Madrone Health email if available.
+- **Leadership** (`leadership.html`): lists Nicholas Waugh (President) and Blair Tavenner (COO) with brief role descriptions written generically — replace with client-approved bios. Headshots: drop `nicholas-waugh.jpg` and `blair-tavenner.jpg` into `images/team/` (square, ~400×400) and they'll replace the monogram avatars automatically.
+- **Logo**: the Heritage Silhouette mark (client-selected canopy tree, recolored to brand evergreen/cream) lives in `images/brand/` with a derived favicon. The source is a ~300px raster — for print and large-format use, have a designer produce a clean vector trace; the site files can then be regenerated from it. Confirm the source image's licensing/ownership before launch.
+- **Leadership page**: LinkedIn links live for Nick Waugh and Blair Tavenner; Hawkins Delafield & Wood LLP listed as outside general counsel (firm-level, per client); board roster published (Nicholas Waugh, Thomas J. Higgins, Pria Hidisyan, Zachary Heineman) — have each director confirm their one-line bio. Headshots still welcome at `images/team/nicholas-waugh.jpg` and `images/team/blair-tavenner.jpg`.
+- **Energy sector**: added across the site per client direction. The specific 250MW municipal-PPA solar proposal was deliberately NOT named on the site (active procurement); generic "utility-scale solar under municipal power purchase agreements" language is used instead.
+- **U of Memphis opening (August 2026)** was stated by the client; confirm the exact date before launch.
+- **Contact form**: wired for Netlify Forms (works automatically when hosted on Netlify — enable form notifications to info@madrone.org in the Netlify dashboard; includes a honeypot field). On any other host, swap the form's opening tag for a Formspree action per the HTML comment in `contact.html`, or add a serverless handler. Until a backend is active, the form will not deliver messages — test one submission after deploy. All public mailto links were removed to reduce address scraping.
+- **Mission/exempt-purpose language**: the three-pillar mission (burdens of government, charitable burdens of higher education, administrative/financial burdens of healthcare organizations) and the Madrone Health Foundation senior-living exempt purpose were written from the client's direction — have counsel confirm the phrasing matches the articles of incorporation before launch.
