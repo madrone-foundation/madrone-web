@@ -65,10 +65,6 @@
         </div>
       </div>
       <div>
-        <!-- Form backend: wired for Netlify Forms (data-netlify attribute is inert on other hosts).
-             Hosting elsewhere? Replace the form tag with:
-             <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
-             and delete the hidden form-name input. -->
         <form class="contact-form" name="contact" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact">
           <p class="hp" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
