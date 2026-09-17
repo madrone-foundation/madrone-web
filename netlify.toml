@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://madronecdf.org/*"
+  to = "https://madrone.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.madronecdf.org/*"
+  to = "https://madrone.org/:splat"
+  status = 301
+  force = true
