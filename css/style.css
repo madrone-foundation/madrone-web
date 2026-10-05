@@ -950,6 +950,8 @@ section:not(.green-bg) .step p { color: var(--stone); }
   .dev-item { grid-template-columns: 1fr; gap: 8px; }
   .dev-status { text-align: left; }
 
+  .news-item { grid-template-columns: 1fr; gap: 10px; }
+
   .hero-facts { grid-template-columns: 1fr; }
   .hero-facts > div { border-left: none; padding-left: 0; padding-top: 16px; padding-bottom: 16px; border-top: 1px solid var(--line); }
   .hero-facts > div:first-child { border-top: none; }
